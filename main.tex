@@ -1,0 +1,217 @@
+
+\documentclass[11pt]{article}
+\addtolength{\oddsidemargin}{-.5in}%
+	\addtolength{\evensidemargin}{-.5in}%
+	\addtolength{\textwidth}{1in}%
+	\addtolength{\textheight}{1.3in}%
+	\addtolength{\topmargin}{-.8in}%
+    \newcommand{\blind}{0}
+    \makeatletter
+    \renewcommand\section{\@startsection {section}{1}{\z@}%
+                                       {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                       {2.3ex \@plus.2ex}%
+                                       {\normalfont\fontfamily{phv}\fontsize{14}{17}\bfseries}}
+    \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                         {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                         {1.5ex \@plus .2ex}%
+                                         {\normalfont\fontfamily{phv}\fontsize{11}{14}\bfseries}}
+    \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                        {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                         {1.5ex \@plus .2ex}%
+                                         {\normalfont\normalsize\fontfamily{phv}\fontsize{11}{14}\selectfont}}
+     \makeatother
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%% IISE Transactions package list %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\usepackage{amsmath}
+	\usepackage{amsfonts}
+	\usepackage{graphicx}
+	\usepackage{enumerate}
+	\usepackage{float}
+	\usepackage{hyperref}
+	\usepackage{xcolor}
+	\usepackage{pgfplots}
+	\usepackage{algorithm}
+	\usepackage{algpseudocode}
+        \usepackage{comment}
+	\usepackage{natbib} %comment out if you do not have the package
+	\usepackage{url} % not crucial - just used below for the URL
+    \usepackage{multirow}
+    \usepackage{array}
+    \usepackage{booktabs}
+    \usepackage{longtable}
+    \usepackage{multicol}
+    \usepackage{hyperref}
+    \usepackage{subfig}
+    \usepackage{float}
+    \usepackage[labelformat=empty]{caption}
+    \hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        filecolor=magenta,      
+        urlcolor=cyan,
+        linkbordercolor=blue,
+        pdfborderstyle={/S/U/W 1} % Underlined Link
+    }
+    \usepackage{subcaption}
+    \usepackage{subfigure}
+    \linespread{1.5}
+
+    \begin{document}
+
+    \def\spacingset#1{\renewcommand{\baselinestretch}%
+			{#1}\small\normalsize} \spacingset{1}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		\if0\blind
+		{
+            \begin{titlepage}
+            \vspace*{0.7in}
+            \begin{center}
+            \begin{figure}[htb]
+            \begin{center}
+            \includegraphics[width=9cm]{concordia-logo (1).jpg}
+            \end{center}
+            \end{figure}
+            \vspace*{0.3in}
+            \begin{Large}
+            \textbf{SOEN 6841: SOFTWARE PROJECT MANAGEMENT} \\
+            \end{Large}
+            \vspace*{0.2in}
+            \begin{Large}
+                \text{Topic Analysis And Synthesis}
+            \end{Large}
+            \\
+            \vspace*{0.9in}
+            \begin{Large}
+            \textbf{Topic: What are good practices for ending
+a canceled project?} \\
+            \vspace*{0.2in}
+            \href{https://github.com/SnehaKothapalli/SOEN-6841}{Github Link}\\
+            \end{Large}
+            \vspace*{0.75in}
+            \begin{Large}
+            \textbf{\emph{Authors}} \\
+            \vspace*{0.2in}
+            Sree Sneha Kothapalli - 40235510\\
+            \end{Large}
+            \end{center}
+            \begin{center}
+            \vspace*{0.9in}
+            \href{https://www.overleaf.com/project/6554fae57174e1ce49f854b3}{https://www.overleaf.com/project/6554fae57174e1ce49f854b3}\end{center}
+            \end{titlepage}
+	%\newpage
+	\spacingset{1.5}
+
+\pagebreak
+\tableofcontents
+\newpage
+    
+    
+    % Abstract
+\section{Abstract} 
+        Even in cases where a project is delayed or concludes earlier than anticipated, the accomplishments are still valuable. Even if the results fall short of our expectations, the important thing is to salvage as much as we can from the work completed. Keeping track of everything that transpired aids in our understanding of why things didn't work out and may come in handy should we decide to take the project again in the future. It's important to acknowledge everyone's efforts and have candid conversations about what may have been done better. Even though the project is coming to an end, closing on a good note prepares the ground for even better future cooperation.
+
+        An essential component of this closure is communication. In order to reduce any negative emotions stemming from the project's early termination, open and inclusive discussions help to create a climate of trust and understanding. Furthermore, by accepting this outcome as a group learning opportunity, the team is able to change and becomes a force for future successful collaborations.
+        
+        A project that is terminated is, in essence, a turning point rather than just the conclusion. It serves as a forum for discussing mistakes, recognizing accomplishments, and laying the groundwork for future triumphs. It's about saying goodbye in a cordial manner with the knowledge that the lessons learned will support future initiatives. It's a chance to move past the "what could have been" and toward the "what can be," turning obstacles into stepping stones toward more promising goals. 
+    
+    % Introduction
+\section{Introduction}
+        \subsection{Motivation}
+            Unexpected project termination presents a chance for learning and development. Even if the trip may not have lasted as long as planned, the lessons learned will help in the future. It's an opportunity to use failures as teaching moments, building resilience and clearing the path for more robust, well-informed attempts.
+        \subsection{Problem Statement}
+            Trying to come up with a plan for dealing with a project cancellation: preserving what's important, recording experiences, appreciating everyone's work, and maintaining goodwill in order to work together again in the future. How can one successfully handle this situation?
+        \subsection{Objectives}
+            The goal is to skillfully handle the fallout from a project cancellation. It entails preserving reusable parts, thoroughly recording events, acknowledging each person's contribution, upholding wholesome connections, and extracting knowledge for subsequent ventures. Beyond simply finishing the project, the goal is to learn, adapt, and make sure that its conclusion serves as a stimulus for future partnerships and better practices.
+    \section{Reasearch Questions}
+    \begin{enumerate}
+        \item After a project is terminated prematurely, how may deliverables or progress be recovered?
+        \item What use does it serve to record the experiences and results of a project that is canceled?
+        \item After a project is canceled, how could individual efforts be recognized and acknowledged?
+        \item What tactics might be used when a project is canceled to keep good ties with team members and stakeholders?
+        \item Exist any efficient techniques for performing a retrospective or post-mortem analysis on a project that has been canceled?
+        \item In what ways might the knowledge gained from the cancellation of a project be implemented in future undertakings or possible project restarts?
+        \item What part does effective communication play in handling the fallout from a project cancellation?
+        \item Can initiatives that have been abandoned be resurrected later on, and what steps could make this possible?
+        \item What can be learned from the ways that other industries handle the end of initiatives that are canceled?
+        \item What kind of assistance or steps may be taken to lessen the negative effects of project cancellation on team spirit and career advancement?
+    \end{enumerate}
+
+    \section{Keywords}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item Recoverable resources
+            \item Recording encounters
+            \item Contributions from individuals
+            \item Relationships between stakeholders
+            \item Post-mortem examination
+            \item Knowledge gained
+            \item Techniques of communication
+            \item Project restart
+            \item Business strategies
+            \item Team spirit
+        \end{itemize}
+    \end{multicols}
+
+    \section{Criteria for Evaluation }
+    \begin{enumerate}
+        \item \textbf{Evaluation of Recovarables:}
+                \begin{itemize}
+                    \item \textbf{\textit{Recovery Extent:}} The amount and caliber of project deliverables that can be salvaged after cancellation.
+                    \item \textbf{\textit{Usability and Value:}} Evaluation of the potential worth or utility of salvaged assets for upcoming projects or initiatives.
+                \end{itemize}
+        \item \textbf{Comprehensive Documentation:}
+                \begin{itemize}
+                    \item \textbf{\textit{Scope of Documentation:}} The extent and quality of the experiences, difficulties, and results that have been chronicled.
+                    \item \textbf{\textit{Clarity and Detail:}} The thoroughness and precision with which the reasons for project termination were recorded. 
+                \end{itemize}
+        \item \textbf{Recognition of Contributions:}
+                \begin{itemize}
+                    \item \textbf{\textit{Acknowledgment Approach:}} The manner and degree of individual work recognition in the face of project cancellation.
+                    \item \textbf{\textit{Impact assessment:}} An analysis of the ways in which specific contributions affected or influenced the results of a project.
+                \end{itemize}
+        \item \textbf{Management of Stakeholder Relations:}
+                \begin{itemize}
+                    \item \textbf{\textit{Post-Cancellation Engagement:}} Evaluation of initiatives taken to keep good connections with stakeholders following project cancellation.
+                    \item \textbf{\textit{Feedback and Satisfaction:}} Comments from interested parties about how the project's closure was handled and communicated.
+                \end{itemize}
+        \item \textbf{Comprehensive Post-Mortem Evaluation:}
+                \begin{itemize}
+                    \item \textbf{\textit{Depth of Analysis:}} How in-depth and comprehensive the retrospective or post-project analysis was.
+                    \item \textbf{\textit{Identification and Prioritization:}} The process of identifying and ranking the most important lessons gained for upcoming projects.
+                \end{itemize}
+        \item \textbf{Effective Communication Strategies:}
+                \begin{itemize}
+                    \item \textbf{\textit{Communication Clarity:}} The ability to effectively and clearly inform all parties involved of the project's end.
+                    \item \textbf{\textit{Timeliness and Transparency:}} Communication that is both timely and transparent before, during, and after project cancelation.
+                \end{itemize}
+        \item \textbf{Preparation for Potential Project Resumption:}
+                \begin{itemize}
+                    \item \textbf{\textit{Restoration Readiness:}} Plans and actions in place in case a project is picked up again or continues.
+                    \item \textbf{\textit{Conditions for Success:}} Determining what prerequisites must be met for a project revival to be successful.
+                \end{itemize}
+        \item \textbf{Acquiring Knowledge via Industry Methods:}
+                \begin{itemize}
+                    \item \textbf{\textit{Adaptation of Best Practices: }}Application of industry-specific techniques to handling canceled projects.
+                    \item \textbf{\textit{Integration of Lessons:}} The incorporation of knowledge gained from other industries into the methods used in project management today.
+                \end{itemize}
+        \item \textbf{Supporting Team Morale and Development:}
+                \begin{itemize}
+                    \item \textbf{\textit{Effect on Morale:}} An analysis of how the termination of the project affected the motivation and morale of the crew.
+                    \item \textbf{\textit{Support Measures:}} Actions made to ensure the wellbeing and professional development of team members even after the project is terminated.
+                \end{itemize}
+    \end{enumerate}
+    % Methods & Methodology
+    \section{Methods \& Methodology}
+    
+    % Results Obtained
+    \section{Results}
+    
+    % Conclusions and Future Works
+    \section{Conclusions and Future Works}
+            
+    % References
+    \section{References}
+    
+    \end{document}
