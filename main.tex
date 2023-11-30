@@ -5,6 +5,13 @@
 	\addtolength{\textwidth}{1in}%
 	\addtolength{\textheight}{1.3in}%
 	\addtolength{\topmargin}{-.8in}%
+        \let\oldtableofcontents\tableofcontents
+        \renewcommand{\tableofcontents}{%
+         \begingroup
+        \hypersetup{linkcolor=black} % Set the color for table of contents text
+         \oldtableofcontents
+        \endgroup
+    }
     \newcommand{\blind}{0}
     \makeatletter
     \renewcommand\section{\@startsection {section}{1}{\z@}%
@@ -34,6 +41,7 @@
 	\usepackage{algorithm}
 	\usepackage{algpseudocode}
         \usepackage{comment}
+        \usepackage{datetime}
 	\usepackage{natbib} %comment out if you do not have the package
 	\usepackage{url} % not crucial - just used below for the URL
     \usepackage{multirow}
@@ -91,13 +99,19 @@ a canceled project?} \\
             \end{Large}
             \vspace*{0.75in}
             \begin{Large}
-            \textbf{\emph{Authors}} \\
-            \vspace*{0.2in}
+            \textbf{\emph{Author}} \\
+            \vspace*{0.1in}
             Sree Sneha Kothapalli - 40235510\\
+            \vspace*{0.2in}
+            \textbf{\emph{Submitted To}} \\
+            \vspace*{0.2in}
+            Prof. Pankaj Kamthan\\
+            \vspace*{0.2in}
+            \today
             \end{Large}
             \end{center}
             \begin{center}
-            \vspace*{0.9in}
+            \vspace*{0.7in}
             \href{https://www.overleaf.com/project/6554fae57174e1ce49f854b3}{https://www.overleaf.com/project/6554fae57174e1ce49f854b3}\end{center}
             \end{titlepage}
 	%\newpage
@@ -105,7 +119,7 @@ a canceled project?} \\
 
 \pagebreak
     % Abstract
-\section{Abstract} 
+\section*{Abstract} 
         \hspace{1cm} Even in cases where a project is delayed or concludes earlier than anticipated, the accomplishments are still valuable. Even if the results fall short of our expectations, the important thing is to salvage as much as we can from the work completed. Keeping track of everything that transpired aids in our understanding of why things didn't work out and may come in handy should we decide to take the project again in the future. It's important to acknowledge everyone's efforts and have candid conversations about what may have been done better. Even though the project is coming to an end, closing on a good note prepares the ground for even better future cooperation.
 
         An essential component of this closure is communication. In order to reduce any negative emotions stemming from the project's early termination, open and inclusive discussions help to create a climate of trust and understanding. Furthermore, by accepting this outcome as a group learning opportunity, the team is able to change and becomes a force for future successful collaborations.
@@ -245,14 +259,20 @@ a canceled project?} \\
     % References
     \section{References}
     \begin{enumerate}
-    \item Official PRINCE2 website: AXELOS - PRINCE2
-    \item Derby, E., Larsen, D. (2006). Agile Retrospectives: Making Good Teams Great. Pragmatic Bookshelf.
-    \item George, M. L. (2002). Lean Six Sigma: Combining Six Sigma Quality with Lean Production Speed. McGraw-Hill Education.
-    \item Schwaber, K., Sutherland, J. (2017). The Scrum Guide. Scrum.Org.
-    \item Anderson, D. J. (2010). Kanban: Successful Evolutionary Change for Your Technology Business. Blue Hole Press.
-    \item Goldratt, E. M. (1997). Critical Chain. North River Press.
-    \item Cooper, R. G. (2019). Winning at New Products: Creating Value Through Innovation. Basic Books.
-    \item Highsmith, J. A. (2004). Adaptive Software Development: A Collaborative Approach to Managing Complex Systems. Dorset House Publishing.
-    \item ChatGPT
+    \item Official PRINCE2 website: AXELOS - PRINCE2\par
+    \url{https://www.axelos.com/}
+    \item Derby, E., Larsen, D. (2006). Agile Retrospectives: Making Good Teams Great. Pragmatic Bookshelf.\par \url{https://agile.2ia.net/Agile%20Retrospectives.pdf}
+    \item George, M. L. (2002). Lean Six Sigma: Combining Six Sigma Quality with Lean Production Speed. McGraw-Hill Education.\par
+    \url{https://www.scirp.org/(S(i43dyn45te-exjx455qlt3d2q))/reference/referencespapers.aspx?referenceid=1549034}
+    \item Schwaber, K., Sutherland, J. (2017). The Scrum Guide. Scrum.Org.\par
+    \url{https://scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf}
+    \item Anderson, D. J. (2010). Kanban: Successful Evolutionary Change for Your Technology Business. Blue Hole Press.\par \url{https://personalpages.bradley.edu/~young/CS690S117old/Kanban.pdf}
+    \item Goldratt, E. M. (1997). Critical Chain. North River Press.\par \url{https://www.scirp.org/(S(czeh2tfqw2orz553k1w0r45))/reference/referencespapers.aspx?referenceid=1914831}
+    \item Cooper, R. G. (2019). Winning at New Products: Creating Value Through Innovation. Basic Books.\par
+    \url{https://www.scirp.org/(S(lz5mqp453edsnp55rrgjct55))/reference/referencespapers.aspx?referenceid=1086818}
+    \item Highsmith, J. A. (2004). Adaptive Software Development: A Collaborative Approach to Managing Complex Systems. Dorset House Publishing.\par
+    \url{https://books.google.ca/books?hl=en&lr=&id=CVcUAAAAQBAJ&oi=fnd&pg=PR7&dq=Highsmith,+J.+A.+(2004).+Adaptive+Software+Development:+A+Collaborative+Approach+to+Managing+Complex+Systems.+Dorset+House+Publishing.&ots=5uwC6xIuBH&sig=jCEShZAtdO_2J5EfLZECS6yxFLg#v=onepage&q&f=false}
+    \item \url{https://chat.openai.com/}
+    \item \url{https://quillbot.com/}
     \end{enumerate}
     \end{document}
