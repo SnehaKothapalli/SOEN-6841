@@ -1,6 +1,6 @@
 # Topic Analysis and Synthesis Report for SOEN 6841 - Software Project Management
 
-# Project: What are good practices for ending a canceled project?
+# Topic: What are good practices for ending a canceled project?
 
 ## Description
 This repository contains research and insights into effective practices for ending prematurely canceled projects. The report delves into strategies, methods, and evaluation criteria crucial for managing the aftermath of project termination. 
